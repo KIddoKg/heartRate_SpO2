@@ -176,6 +176,7 @@ class _ScreenWebState extends State<ScreenWeb>
   }
 
   void showDieLog() {
+    playDialogSound();
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -810,7 +811,7 @@ class _ScreenWebState extends State<ScreenWeb>
   }
 
   void showInformationDialog(BuildContext context) {
-    playDialogSound();
+
     showDialog(
       context: context,
       builder: (BuildContext context) {

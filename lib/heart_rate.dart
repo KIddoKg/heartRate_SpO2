@@ -271,6 +271,7 @@ class _HeartScreenState extends State<HeartScreen>
       avg = ((currentValue / feeds.length)).toInt();
       print('Giá trị trung bình: ${avg}');
       if(avg < 95 && isProcessing == false){
+        print(avg);
         BoolSpO2 = true;
         playDialogSound();
       }
