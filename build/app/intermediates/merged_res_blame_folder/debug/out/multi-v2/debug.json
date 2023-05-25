@@ -79,7 +79,7 @@
             "outputFile": "com.example.heart_spo2.app-merged_res-13:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "D:\\sem1-3\\Mobile-app\\AndroidStudioProjectsFlutter\\heart_spo2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\sem1-3\\Mobile-app\\iot\\heart_spo2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -879,7 +879,7 @@
                     }
                 },
                 {
-                    "source": "D:\\sem1-3\\Mobile-app\\AndroidStudioProjectsFlutter\\heart_spo2\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\sem1-3\\Mobile-app\\iot\\heart_spo2\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

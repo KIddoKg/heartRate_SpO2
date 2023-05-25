@@ -86,7 +86,7 @@ class _ScreenWebState extends State<ScreenWeb>
     https: //api.thingspeak.com/update?api_key=7W4XCY095VFWWG45&field1=0
     String apiUrl = 'https://api.thingspeak.com/update';
     String apiKey = '2R054P0VU6789LGL';
-    String apiKey2 = '7W4XCY095VFWWG45';
+    String apiKey2 = '0FI3II2XKGE31GQE';
 
     int fieldValue1 = data['age']; // Giá trị mới cho trường field1
     int fieldValue2 = data['sex'];
@@ -107,7 +107,7 @@ class _ScreenWebState extends State<ScreenWeb>
         '$apiUrl?api_key=$apiKey&field1=$fieldValue6&field2=$fieldValue7&field3=$fieldValue8&field4=$fieldValue9&field5=$fieldValue10&field6=$fieldValue11&field7=$fieldValue12';
 
     String url2 =
-        '$apiUrl?api_key=$apiKey2&field1=$randomNumber&field2=$randomNumber2&field3=$fieldValue1&field4=$fieldValue2&field5=$fieldValue3&field6=$fieldValue4&field7=$fieldValue5';
+        '$apiUrl?api_key=$apiKey2&field1=$fieldValue1&field2=$fieldValue2&field3=$fieldValue3&field4=$fieldValue4&field5=$fieldValue5';
     final response = await http.get(Uri.parse(url));
     final response2 = await http.get(Uri.parse(url2));
 
@@ -158,7 +158,7 @@ class _ScreenWebState extends State<ScreenWeb>
       entryId = feeds2[feeds2.length - 1].entryId;
 
       if (entryId > data) {
-        for (int i = data + 1; i < feeds2[feeds2.length - 1].entryId; i++) {
+        for (int i = data + 1; i <= feeds2[feeds2.length - 1].entryId; i++) {
           String text = "1";
 
           if (feeds2[i].field1 == text) {
@@ -212,8 +212,8 @@ class _ScreenWebState extends State<ScreenWeb>
         }
       }
 
-      // print('Giá trị SpO2 nhỏ nhất: $minSpO2');
-      // print('Giá trị SpO2 lớn nhất: $maxSpO2');
+      print('Giá trị SpO2 nhỏ nhất: $minSpO2');
+      print('Giá trị SpO2 lớn nhất: $maxSpO2');
     } else {
       print('Danh sách rỗng ${feeds.length}');
     }
@@ -303,6 +303,27 @@ class _ScreenWebState extends State<ScreenWeb>
       currentValue2 = double.parse(feeds[2].field2 ?? '0') % 10;
       currentValue3 = double.parse(feeds[3].field2 ?? '0') % 10;
       currentValue4 = double.parse(feeds[4].field2 ?? '0') % 10;
+      print(currentValue);
+      print(currentValue1);
+      print(currentValue2);
+      print(currentValue3);
+      print(currentValue4);
+      if(currentValue == 0){
+        currentValue = 10;
+      }
+      if(currentValue1 == 0){
+        currentValue1 = 10;
+      }
+      if(currentValue2 == 0){
+        currentValue2 = 10;
+      }
+      if(currentValue3 == 0){
+        currentValue3 = 10;
+      }
+      if(currentValue4 == 0){
+        currentValue4 = 10;
+      }
+
     } else {
       print('Danh sách rỗng ${feeds.length}');
     }

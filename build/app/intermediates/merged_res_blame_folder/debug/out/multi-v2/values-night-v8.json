@@ -4,7 +4,7 @@
             "outputFile": "com.example.heart_spo2.app-mergeDebugResources-11:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\sem1-3\\Mobile-app\\AndroidStudioProjectsFlutter\\heart_spo2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\sem1-3\\Mobile-app\\iot\\heart_spo2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
