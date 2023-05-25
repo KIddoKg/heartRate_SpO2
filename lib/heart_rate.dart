@@ -221,12 +221,7 @@ class _HeartScreenState extends State<HeartScreen>
       }
 
       if (index < tests) {
-        int randomInt = Random().nextInt(1);
-        if (randomInt == 0) {
           Rate = feeds[feeds.length - 1].field1;
-        } else {
-          Rate = feeds[feeds.length].field1;
-        }
       }
     }
   }

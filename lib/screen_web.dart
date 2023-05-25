@@ -237,12 +237,10 @@ class _ScreenWebState extends State<ScreenWeb>
       }
 
       if (index < tests) {
-        int randomInt = Random().nextInt(1);
-        if (randomInt == 0) {
-          Rate = feeds[feeds.length - 1].field1;
-        } else {
-          Rate = feeds[feeds.length].field1;
-        }
+
+
+          Rate = feeds[feeds.length-1].field1;
+
       }
     }
   }
@@ -258,7 +256,7 @@ class _ScreenWebState extends State<ScreenWeb>
       if (entryId == data) {
         count++;
         print(count);
-        if (count >= 2) {
+        if (count >= 3) {
           String text = "chưa do";
           print(text);
           isProcessing = true;
