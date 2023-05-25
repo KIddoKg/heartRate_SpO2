@@ -328,6 +328,7 @@ class _ScreenWebState extends State<ScreenWeb>
             Spacer(),
             Center(
               child: IconButton(
+                color: Colors.red,
                 icon: Icon(Icons.add),
                 onPressed: () {
                   showInformationDialog(context);

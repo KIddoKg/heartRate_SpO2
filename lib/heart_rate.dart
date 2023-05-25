@@ -312,6 +312,7 @@ class _HeartScreenState extends State<HeartScreen>
           Spacer(),
           Center(
             child: IconButton(
+              color: Colors.red,
               icon: Icon(Icons.add),
               onPressed: () {
                 showInformationDialog(context);
