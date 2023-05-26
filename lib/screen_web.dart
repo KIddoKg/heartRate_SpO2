@@ -499,7 +499,7 @@ class _ScreenWebState extends State<ScreenWeb>
                                       TextSpan(
                                           text: '\nMAX',
                                           style: appText(
-                                              color: Colors.white,
+                                              color: Colors.black,
                                               weight: FontWeight.w500)),
                                     ],
                                   ),
@@ -523,7 +523,7 @@ class _ScreenWebState extends State<ScreenWeb>
                                       TextSpan(
                                           text: '\nMIN',
                                           style: appText(
-                                              color: Colors.white,
+                                              color: Colors.black,
                                               weight: FontWeight.w500)),
                                     ],
                                   ),
