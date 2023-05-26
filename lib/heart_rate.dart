@@ -164,7 +164,7 @@ class _HeartScreenState extends State<HeartScreen>
 
       if (entryId > data) {
 
-      for(int i = data + 1; i <= feeds2[feeds2.length-1].entryId; i++){
+      for(int i = data; i < feeds2[feeds2.length-1].entryId; i++){
         String text = "1";
 
         if (feeds2[i].field1 == text){

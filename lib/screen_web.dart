@@ -158,9 +158,10 @@ class _ScreenWebState extends State<ScreenWeb>
       entryId = feeds2[feeds2.length - 1].entryId;
 
       if (entryId > data) {
-        for (int i = data + 1; i <= feeds2[feeds2.length - 1].entryId; i++) {
+        for (int i = data; i < feeds2[feeds2.length - 1].entryId; i++) {
           String text = "1";
-
+print(data);
+          print(feeds2[i].field1);
           if (feeds2[i].field1 == text) {
             print("bệnh nà");
             alert = true;
